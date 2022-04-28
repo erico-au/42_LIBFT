@@ -6,7 +6,7 @@
 /*   By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 21:11:06 by eraugust          #+#    #+#             */
-/*   Updated: 2022/04/18 19:39:20 by eraugust         ###   ########.fr       */
+/*   Updated: 2022/04/29 00:54:19 by eraugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	dest_c = (unsigned char *)dest;
 	src_c = (unsigned char *)src;
-	while (i > n)
+	while (i < n)
 	{
 		dest_c[i] = src_c[i];
 		i++;
