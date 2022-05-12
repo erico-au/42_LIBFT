@@ -1,7 +1,8 @@
 # 42cursus
 Cursus 42 SP - 2022
 
-	## My first library - LIBFT
+	## __My first library - LIBFT__
+
 		### ft_isalnum
 		### ft_isalpha
 		### ft_isascii
@@ -25,7 +26,9 @@ Cursus 42 SP - 2022
 		### ft_memchr
 		### ft_memcmp
 		### ft_strnstr
-		## PART 2
+
+		## __PART 2__
+
 		### ft_substr
 		### ft_strjoin
 		### ft_strtrim
@@ -37,7 +40,9 @@ Cursus 42 SP - 2022
 		### ft_putstr_fd
 		### ft_putendl_fd
 		### t_putnbr_fd
-		## Bonus
+
+		## __Bonus__
+		
 		### ft_lstnew
 		### ft_lstadd_front
 		### ft_lstsize
