@@ -1,6 +1,6 @@
 # 42cursus
 
-<center> ## __!! My first library !!__ </center>
+## <center>__!! My first library !!__</center>
 
 ## __PART 1__
 
