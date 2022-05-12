@@ -6,7 +6,7 @@
 /*   By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 14:39:18 by eraugust          #+#    #+#             */
-/*   Updated: 2022/04/29 01:21:47 by eraugust         ###   ########.fr       */
+/*   Updated: 2022/05/02 17:35:39 by eraugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ void	*ft_calloc(size_t nitems, size_t size)
 	p = malloc(nitems * size);
 	if (p == NULL)
 		return (NULL);
-	ft_bzero(p, size);
+	ft_bzero(p, nitems * size);
 	return (p);
 }
