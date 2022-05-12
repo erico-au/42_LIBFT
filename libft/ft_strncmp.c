@@ -6,7 +6,7 @@
 /*   By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 19:00:56 by eraugust          #+#    #+#             */
-/*   Updated: 2022/04/19 22:04:31 by eraugust         ###   ########.fr       */
+/*   Updated: 2022/05/02 17:20:54 by eraugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	while ((*str1 && str2) != '\0' n > 0)
+	while ((*str1 && str2) != '\0' && n > 0)
 	{
 		if (*str1 != *str2)
 			break ;

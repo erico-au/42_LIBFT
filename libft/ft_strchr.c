@@ -6,7 +6,7 @@
 /*   By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 21:43:49 by eraugust          #+#    #+#             */
-/*   Updated: 2022/04/18 22:21:57 by eraugust         ###   ########.fr       */
+/*   Updated: 2022/05/02 18:01:20 by eraugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strchr(const char *str, int c)
 	}
 	if (s == '\0')
 		return ((char *)&str[i]);
-	return (NULL);
+	return (0);
 }

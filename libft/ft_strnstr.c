@@ -6,7 +6,7 @@
 /*   By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 16:40:29 by eraugust          #+#    #+#             */
-/*   Updated: 2022/04/22 17:54:04 by eraugust         ###   ########.fr       */
+/*   Updated: 2022/05/02 17:25:09 by eraugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] != '\0' && i < len)
 	{
 		n = 0;
-		while ((big[i + n] == little[c]) && (i + n) < len)
+		while ((big[i + n] == little[n]) && (i + n) < len)
 		{
 			if (little[n + 1] == '\0')
 				return ((char *)&big[i]);
