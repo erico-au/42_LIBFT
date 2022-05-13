@@ -21,7 +21,7 @@ char	*ft_itoa(int number_s)
 	size_t	len;
 
 	len = ft_num_char(number_s);
-	str = (char *)malloc((len + 1) * sizeof(char));
+	str = (char *)malloc((len + 1) * sizeof(*str));
 	if (!str)
 		return (NULL);
 	ft_put_itoa(number_s, str);

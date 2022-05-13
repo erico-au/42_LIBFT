@@ -12,8 +12,8 @@
 
 #include "libft.h"
 
-size_t	ft_number_words(const char *s, char c);
-char	*ft_bit(char const *s, char c, int index);
+static size_t	ft_number_words(const char *s, char c);
+static char		*ft_bit(char const *s, char c, int index);
 
 char	**ft_split(char const *s, char c)
 {
@@ -37,7 +37,7 @@ char	**ft_split(char const *s, char c)
 	return (ret);
 }
 
-size_t	ft_number_words(const char *s, char c)
+static size_t	ft_number_words(const char *s, char c)
 {
 	size_t	i;
 
@@ -56,7 +56,7 @@ size_t	ft_number_words(const char *s, char c)
 	return (i);
 }
 
-char	*ft_bit(char const *s, char c, int index)
+static char	*ft_bit(char const *s, char c, int index)
 {
 	int		n_str;
 	int		i;
@@ -78,6 +78,8 @@ char	*ft_bit(char const *s, char c, int index)
 			n++;
 	}
 	str = (char *)malloc((n - i + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	ft_strlcpy((char *)str, (char *)(s + i), (size_t)(n - i + 1));
 	return (str);
 }

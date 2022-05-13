@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: eraugust <eraugust@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2022/05/12 19:47:39 by eraugust         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 .PHONY:		bonus all clean fclean re rebonus
 
 NAME	:=	libft.a
@@ -76,8 +64,11 @@ $(NAME):	$(OBJS) $(INC)
 			$(LIB) $(NAME) $(OBJS)
 			ranlib $(NAME)
 
-bonus:		$(NAME) $(BONUS_OBJS)
+bonus:		libft_b.a
+
+libft_b.a :	$(NAME) $(BONUS_OBJS)
 			$(LIB) $(NAME) $(BONUS_OBJS)
+			cp libft.a libft_b.a
 
 all:		$(NAME)
 
@@ -85,15 +76,8 @@ clean:
 			$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean:		clean
-			$(RM) $(NAME)
+			$(RM) $(NAME) libft_b.a
 
 re:			fclean all
 
 rebonus:	fclean bonus
-
-##%.o : %.c
-##	$(CC) $(CFLAGS) -c $< -o $@
-
-# $@ -> traz o nome alvo
-# $^ -> traz todos os pré-requisitos
-# $< -> traz o primeiro pré-requisito. 

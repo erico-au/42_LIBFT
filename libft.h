@@ -27,7 +27,7 @@ int		ft_isalpha(int a);
 int		ft_isascii(int a);
 int		ft_isdigit(int d);
 int		ft_isprint(int a);
-int		ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nitems, size_t size);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
